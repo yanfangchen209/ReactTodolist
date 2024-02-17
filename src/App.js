@@ -8,10 +8,20 @@ function App() {
     setData(prevData => [newData, ...prevData]);
   }
 
+  const deleteHandler = (id) => {
+    const deleteConfirmation = window.confirm("Are you sure to delete this item?");
+    if(deleteConfirmation){
+      setData(prevData => prevData.filter(item => id !== item.id))};
+    }
+     //if cancel, do nothing.
+  const editHandler = (id, newData) => {
+    setData(prevData => prevData.map(item => item.id === id ? {...item, ...newData}  : item))
+  }
+
   return (
     <div>
       <Newform onAdd={addHandler} />
-      <Todolist todolists={data}/>
+      <Todolist todolists={data} onDelete={deleteHandler} onEdit={editHandler}/>
 
     </div>
   );

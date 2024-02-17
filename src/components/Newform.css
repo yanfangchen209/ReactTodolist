@@ -1,0 +1,35 @@
+/* Newform.css */
+
+.add-form {
+    display: flex;
+    max-width: 300px;
+    margin: 40px auto 0;
+  }
+  
+  .form-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 2px solid #18211a;
+    border-radius: 4px;
+  }
+  
+  .invalid {
+    border: 2px solid #ff0000;
+  }
+  
+  .input-submit-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .input-submit-button:hover {
+    background-color: #45a049;
+  }
+  
