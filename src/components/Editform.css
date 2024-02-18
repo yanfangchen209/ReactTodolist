@@ -1,12 +1,12 @@
-/* Newform.css */
+/* Editform.css */
 
-.add-form {
+.edit-form {
     display: flex;
     max-width: 300px;
     margin: 40px auto 0;
   }
   
-  .form-input {
+  .edit-form-input {
     flex-grow: 1;
     padding: 8px;
     font-size: 14px;
@@ -19,17 +19,31 @@
     border: 2px solid #ff0000;
   }
   
-  .input-submit-button {
+  .edit-save-button,
+  .edit-cancel-button {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #664caf;
-    color: #fff;
     border: none;
     border-radius: 4px;
   }
   
-  .input-submit-button:hover {
+  .edit-save-button {
+    background-color: #664caf;
+    color: #fff;
+    margin-right: 5px;
+  }
+  
+  .edit-cancel-button {
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
+  .edit-save-button:hover {
     background-color: #45a049;
+  }
+  
+  .edit-cancel-button:hover {
+    background-color: #ff4081;
   }
   

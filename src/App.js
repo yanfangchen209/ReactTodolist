@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Newform from './components/Newform';
 import Todolist from './components/Todolist';
+import './App.css';
 
 function App() {
   const [data, setData] = useState([{id: "e1", task: "swimming"}, {id: "e2", task: "reading"}]);

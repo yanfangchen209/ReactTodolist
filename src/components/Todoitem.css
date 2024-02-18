@@ -1,0 +1,52 @@
+/* Todoitem.css */
+
+.todo {
+    margin: 1rem 0;
+    background: #f1f0f3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    color: rgb(16, 2, 2);
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todoitem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    color: #060101;
+    text-decoration-thickness: 0.1em;
+  }
+  
+  .tasktext {
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0;
+  }
+  
+  .todoitem svg {
+    margin-left: 0; /* Adjust this line */
+    cursor: pointer;
+  }
+  
+  .todoitem svg:hover {
+    color: #d9534f;
+  }
+  
+  .todoitem .fa-trash {
+    margin-left: 10px;
+  }
+  
+  .todoitem .fa-pencil {
+    margin-left: 5px;
+  }
+  
